@@ -1,0 +1,155 @@
+.cropArea {
+    min-width: 60%;
+    margin: 0 auto;
+
+    &__flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 1rem;
+        overflow-x: hidden;
+        @media only screen and (max-width: 1024px) {
+            flex-direction: column;
+        }
+    }
+    &__crop {
+        width: 48%;
+        min-width: 200px;
+        display: flex;
+        justify-content: center;
+        @media only screen and (max-width: 600px) {
+            width: 75%;
+          }
+        &-cropper {
+            width: 200px;
+        }
+    }
+    &__how {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        @media only screen and (max-width: 1024px) {
+            margin-top: 2rem;
+        }
+        &-head {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: -0.02em;
+            color: #787878;
+            margin: 0 0 1rem;
+        }
+        &-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            @media only screen and (max-width: 1024px) {
+                flex-direction: column;
+            }
+        }
+        &-box {
+            width: fit-content;
+            max-width: 150px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            @media only screen and (max-width: 1024px) {
+                margin-top: 1rem;
+            }
+        }
+        &-text {
+            position: relative;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            color: #787878;
+            margin: 0 0 0.5rem;
+            .cropArea__how-infoIcon {
+                margin-left: 5px;
+            }
+            .cropArea__how-infoIcon:hover {
+                cursor: pointer;
+            }
+            .cropArea__how-infoIcon:hover + .cropArea__how-info {
+                    opacity: 1;
+                    visibility: visible;
+            }
+            .cropArea__how-info {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                transform: translate(60%, 85%);
+                width: 212px;
+                height: 108px;
+                padding: 10px 20px;
+                transition: all 0.3s ease-in-out;
+
+                opacity: 0;
+                visibility: hidden;
+                background: #FFFFFF;
+                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06);
+
+                ul {
+                    list-style: none; 
+                    li {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #787878;
+                    }
+                    li:before{ content:"•"; font-size:20px;color: #787878; margin: 0 5px 0 -10px;}
+                }
+            }
+        }
+        &-img {
+            width: 100%;
+            max-width: 125px;
+            height: auto;
+        }
+        &-icon {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0.5rem auto;
+        }
+    }
+
+    //optional
+    &__preview {
+        width: 35%;
+        img {
+            width: 100%;
+        }
+        .small-text {
+            font-size: 12px;
+        }
+    }
+}
+
+.crop__submit {
+    width: 98%;
+    margin: 0 auto;
+    padding: 0 15px 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .largeBtn {
+        background-color: #fd5600;
+        color: #fff;
+        border: none;
+    }
+    .largeBtn:hover {
+        background-color: #fd5600;
+        color: #fff;
+        border: none;
+    }
+}

@@ -1,0 +1,52 @@
+.mail-tabs {
+    display: flex;
+    .smallBtn {
+        background-color: rgb(223, 223, 223);
+        border: 1px solid #CDCDCD;
+        border-radius: 3px 3px 0 0;
+    }
+    .smallBtn:focus {
+        background-color: rgb(255, 255, 255);
+        border: 1px solid #fff;
+    }
+}
+
+
+
+
+
+.smallBtn {
+    background-color: #fff;
+    border: 1px solid #CDCDCD;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+.smallBtn:hover {
+  border: 1px solid #fd5600;
+  box-shadow: 1px 1px 5px rgb(255, 167, 85);
+  cursor: pointer;
+}
+.smallBtn span {
+  font-size: 0.8rem;
+  color: #fd5600;
+}
+.largeBtn {
+  background-color: #fff;
+  border: 2px solid #E5E5E5;
+  border-radius: 8px;
+  padding: 15px 20px;
+  font-size: 15px;
+  color: #828282;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.largeBtn:hover {
+  background: #FFD1B2;
+  border: 2px solid #FFD1B2;
+  color: #BA4A00;
+  cursor: pointer;
+}

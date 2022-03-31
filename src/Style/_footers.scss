@@ -1,0 +1,19 @@
+.modal-content {
+    margin-top: 5%;
+    // position: absolute;
+    // top: 30%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    @media only screen and (max-width: 1024px) {
+        overflow-x: auto;
+    }
+}
+
+#divtocopy {
+    position: relative;
+    width: fit-content;
+    background-color: #fff;
+    margin: 0 5% 0 0;
+    z-index: 60;
+}
+
